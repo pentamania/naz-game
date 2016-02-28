@@ -1,0 +1,21 @@
+{
+  "name": "naz-game",
+  "version": "1.0.0",
+  "description": "Touhou fan-made game featuring Nazrin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "naz-game"
+  },
+  "author": "pentamania",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-uglify": "^1.5.3"
+  }
+}
