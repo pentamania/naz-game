@@ -13,11 +13,15 @@ gulp.task('js:minify', function() {
 	.pipe(gulp.dest('./dist/js'))
 });
 
+gulp.task('watch', ['build'], ()=>{
+	return  gulp.watch('./src/**/*.*', ['build']);
+});
+
 gulp.task('build', ['js:minify'], ()=>{
 	return  console.log('building...');
 });
 
 gulp.task('default', ['build'], ()=>{
 	return gulp.src('./src/*.html')
-    .pipe(gulp.dest('./build/'))
+    .pipe(gulp.dest('./dist/'))
 });

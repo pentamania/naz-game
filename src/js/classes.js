@@ -169,7 +169,7 @@ var MySprite = Class.create(Sprite, {
 
 // ゲージクラス
 var HorizontalGauge = Class.create(Sprite, {
-    initialize: function(width,height,value){
+    initialize: function(width, height, value){
         Sprite.call(this,width,height);
         this.value = value;
         this.maxValue = value; //最大値
@@ -297,7 +297,7 @@ function mapArrayMaker(n,array) {
     }
     return mapArray;
     function randPickUp(arr) {
-        var index = Math.floor(Math.random()*(arr.length+1));
+        var index = Math.floor(Math.random()*(arr.length));
         return array[index];
     };
 };
